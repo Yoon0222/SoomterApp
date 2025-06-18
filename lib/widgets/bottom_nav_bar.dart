@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 const _items = <BottomNavigationBarItem>[
   BottomNavigationBarItem(icon: Icon(Icons.home), label: '홈'),
   BottomNavigationBarItem(icon: Icon(Icons.map), label: '지도'),
+  BottomNavigationBarItem(icon: Icon(Icons.public), label: '지도'),
   BottomNavigationBarItem(icon: Icon(Icons.qr_code_scanner), label: 'QR'),
   BottomNavigationBarItem(icon: Icon(Icons.person), label: '내 정보'),
 ];
@@ -24,6 +25,7 @@ class SoomterBottomNavBar extends StatelessWidget {
       selectedItemColor: Colors.green.shade700,
       unselectedItemColor: Colors.grey,
       onTap: onTap,
+      type: BottomNavigationBarType.fixed,
     );
   }
 }

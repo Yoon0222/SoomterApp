@@ -4,9 +4,16 @@ import 'home_page.dart';
 import 'map_page.dart';
 import 'qr_scan_page.dart';
 import 'profile_page.dart';
+import 'google_map_page.dart';
 
-const _titles = ['홈', '지도', 'QR 스캔', '내 정보'];
-const _pages = [HomePage(), MapPage(), QRScanPage(), ProfilePage()];
+const _titles = ['홈', 'flutter지도', 'google지도', 'QR 스캔', '내 정보'];
+const _pages = [
+  HomePage(),
+  MapPage(),
+  GoogleMapPage(),
+  QRScanPage(),
+  ProfilePage(),
+];
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
